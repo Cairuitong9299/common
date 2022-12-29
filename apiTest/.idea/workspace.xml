@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a51e859-dbef-485c-8856-1975dc9553de" name="Changes" comment="" />
+    <list default="true" id="7a51e859-dbef-485c-8856-1975dc9553de" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/utils/Ehcahce3Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apit/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../apit/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apit/src/main/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../apit/src/main/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../apit/target/classes/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../apit/target/classes/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/HidToIdRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/HidToIdRedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/IdToHidRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/IdToHidRedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/OpenIdToHidRedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/OpenIdToHidRedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/UniqueSsoidImeiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/jedis/UniqueSsoidImeiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/manager/IdRelationRedisManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/manager/IdRelationRedisManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/utils/UniqueSsoidImeiDataUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../core/src/main/java/com/bdp/idmapping/utils/UniqueSsoidImeiDataUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/HidToIdRedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/HidToIdRedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/IdToHidRedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/IdToHidRedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/OpenIdToHidRedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/OpenIdToHidRedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/UniqueSsoidImeiConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/jedis/UniqueSsoidImeiConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/manager/IdRelationRedisManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/manager/IdRelationRedisManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/utils/UniqueSsoidImeiDataUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../core/target/classes/com/bdp/idmapping/utils/UniqueSsoidImeiDataUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/core-1.0.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/core-1.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../core/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../core/target/maven-archiver/pom.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,21 +36,25 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IXwY2afN6AmwRlB8dpyA9x3bYM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,10 +64,23 @@
       <option name="presentableId" value="Default" />
       <updated>1670341280646</updated>
       <workItem from="1670341281924" duration="70000" />
+      <workItem from="1672144864278" duration="3000" />
+      <workItem from="1672198804282" duration="3000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

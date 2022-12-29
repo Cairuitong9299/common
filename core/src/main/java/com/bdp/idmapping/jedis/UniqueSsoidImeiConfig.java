@@ -24,9 +24,9 @@ public class UniqueSsoidImeiConfig implements RedisConfig {
     private int connectionTimeout = 2000;
     private int soTimeout = 2000;
     private int maxAttempts = 5;
-    private int maxTotal = 20;
-    private int maxIdle = 20;
-    private int minIdle = 10;
+    private int maxTotal = 5;
+    private int maxIdle = 5;
+    private int minIdle = 5;
     private int maxWaitMillis = 1000;
 
     private Set<HostAndPort> nodes = new HashSet<>();

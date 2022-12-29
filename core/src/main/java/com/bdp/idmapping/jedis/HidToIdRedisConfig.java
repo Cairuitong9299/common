@@ -31,18 +31,18 @@ public class HidToIdRedisConfig implements RedisConfig{
     private int conncetionTimeout = 2000;
 
 
-    private int soTimeout = 2000;
+    private int soTimeout = 5;
 
     //最多尝试次数
     private int maxAttempts = 5;
 
     //最大连接总数
-    private int maxTotal = 20;
+    private int maxTotal = 5;
 
     //最大空闲连接
-    private int maxIdle = 20;
+    private int maxIdle = 5;
     //最小空闲连接
-    private int minIdle = 20;
+    private int minIdle = 5;
 
     //请求连接最大等待时
     private int maxWaitMillis = 1000;

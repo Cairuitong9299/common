@@ -40,13 +40,19 @@ public class IdRelationRedisManager {
         //方法是将type和id进行拼接
         String key = getIdToHidKey(type, id);
         String hid = null;
+        Jedis jedis = null;
         if (IdCodeEnum.OAID.getCode().equals(type)
                 || IdCodeEnum.VAID.getCode().equals(type)
                 || IdCodeEnum.UDID.getCode().equals(type)
                 || IdCodeEnum.IMEI.getCode().equals(type)) {
-            hid = jedisClusterUtil.getOpenIdToHidJedisCluster().get(key);
+            jedis = jedisClusterUtil.getOpenIdToHidJedisCluster();
+            hid = jedis.get(key);
         } else {
-            hid = jedisClusterUtil.getIdToHidJedisCluster().get(key);
+            jedis = jedisClusterUtil.getIdToHidJedisCluster();
+            hid = jedis.get(key);
+        }
+        if (jedis != null) {
+            jedis.close();
         }
         return hid;
     }
@@ -66,11 +72,17 @@ public class IdRelationRedisManager {
 
     //通过hid来获取id
     public String getIdByHid(String field, String hid) {
+        Jedis jedis = null;
         try {
-            return jedisClusterUtil.getHidToAllJedisCluster().hget(getHidToAllKey(hid), field);
+            jedis = jedisClusterUtil.getHidToAllJedisCluster();
+            return jedis.hget(getHidToAllKey(hid), field);
         } catch (Exception e) {
             logger.error("getIdByHid", e);
             return null;
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
         }
     }
 
@@ -90,10 +102,10 @@ public class IdRelationRedisManager {
         Jedis jedis = null;
         try {
             jedis = jedisClusterUtil.getHidToAllJedisCluster();
-            jedis.set(bizName + flow, "0", "nx", "ex", 1);
+            jedis.set(bizName + flow, "0", "nx", "ex", 100);
             return jedis.incr(bizName + flow);
         } catch (Exception e) {
-            logger.error("getBizNameQPS,e");
+            logger.error("getBizNameQPS", e);
         } finally {
             if (jedis != null) {
                 jedis.close();
@@ -104,10 +116,14 @@ public class IdRelationRedisManager {
 
     //
     private Set<String> getSortSet(String key, boolean isMultipleId, Jedis jedisCluster, long maxSetSize) {
+        Set<String> set = null;
         if (isMultipleId) {
-            jedisCluster.zrevrange(key, 0L, maxSetSize);
+            set = jedisCluster.zrevrange(key, 0L, maxSetSize);
+        } else {
+            set = jedisCluster.zrevrange(key, 0L, 0L);
         }
-        return jedisCluster.zrevrange(key, 0L, 0L);
+        jedisCluster.close();
+        return set;
     }
 
     private String getHidToSsoidKey(String id) {

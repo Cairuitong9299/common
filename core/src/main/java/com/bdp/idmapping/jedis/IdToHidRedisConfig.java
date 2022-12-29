@@ -28,11 +28,11 @@ public class IdToHidRedisConfig implements RedisConfig{
 
     private int maxAttempts = 5;
 
-    private int maxTotal = 20;
+    private int maxTotal = 5;
 
-    private int maxIdle = 20;
+    private int maxIdle = 5;
 
-    private int minIdle = 20;
+    private int minIdle = 5;
 
     private int maxWaitMillis = 1000;
 
